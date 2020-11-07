@@ -1,0 +1,41 @@
+baseURL = "http://blerf.ca/"
+languageCode = "en-us"
+title = "blerf"
+theme = "anatole"
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+title = "blerf"
+author = "Sam Pillsworth"
+description = "blerfer of blerfs"
+profilePicture = "images/profile.png"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/samspills"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/sam_spills"
+
+[menu]
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+ 
+  [[menu.main]]
+  name = "Words"
+  identifier = "words"
+  weight = 200
+  url = "/words/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "about"
+  weight = 300
+  url = "/about/"

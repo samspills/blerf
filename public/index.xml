@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blerf</title>
+    <link>http://blerf.ca/</link>
+    <description>Recent content on blerf</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://blerf.ca/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://blerf.ca/about/</link>
+      <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://blerf.ca/about/</guid>
+      <description>blerf is a placeholder word. You use it when you need to use a word but the word itself does not matter. All my words are blerfs.</description>
+    </item>
+    
+  </channel>
+</rss>
