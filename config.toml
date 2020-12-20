@@ -1,4 +1,4 @@
-baseURL = "https://blerf.ca/"
+baseURL = "https://www.blerf.ca/"
 languageCode = "en-us"
 title = "blerf"
 theme = "anatole"
