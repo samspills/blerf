@@ -10,7 +10,7 @@ command = "hugo --gc --minify"
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-Origin = "http://localhost:1313"
+    Access-Control-Allow-Origin = "*"
 
 [context.production.environment]
 HUGO_VERSION = "0.77.0"
