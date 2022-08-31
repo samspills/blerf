@@ -5,6 +5,11 @@ theme = "anatole"
 enableEmoji = true
 enableRobotsTXT = true
 
+# Syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
 [params]
 title = "blerf"
 author = "Sam Pillsworth"
@@ -39,3 +44,7 @@ url = "https://twitter.com/sam_spills"
   identifier = "about"
   weight = 300
   url = "/about/"
+
+# ox-hugo required
+[markup.goldmark.renderer]
+  unsafe = true
