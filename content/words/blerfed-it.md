@@ -11,10 +11,15 @@ To figure out:
 
 -   [X] is this post getting generated?
 -   [X] how to make a footnote?
--   [ ] What do these checkboxes look like?
+-   [X] What do these checkboxes look like?
+    -   they look totally reasonable
 -   [ ] Did I figure out syntax highlighting?
+    -   hot damn I did! Good job Past Sam!
+-   [ ] different code styling?
+-   [ ] line numbers??
 
-<!--listend-->
+I am looking at this on a small screen and it looks not great. I think I would like to experiment
+with different themes that are better layouts on a small screen.
 
 ```scala
 // this is just some sample code to check highlighting
