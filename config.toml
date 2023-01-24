@@ -1,6 +1,6 @@
 baseURL = "https://www.blerf.ca/"
+title = "Blerf"
 languageCode = "en-us"
-title = "blerf"
 theme = "hugo-ficurinia"
 enableEmoji = true
 enableRobotsTXT = true
@@ -11,39 +11,27 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
 [params]
-title = "blerf"
 author = "Sam Pillsworth"
 description = "blerfer of blerfs"
-profilePicture = "images/profile.png"
+posts = "words"
 
-[[params.socialIcons]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/samspills"
-
-[[params.socialIcons]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/sam_spills"
+logo = "/images/profile.png"
+favicon = "/images/favicon.png"
+faviconIco = "/images/favicon.ico"
+appletouch = "/images/apple-touch-icon.png"
+icon512 = "/images/android-chrome-512x512.png"
 
 [menu]
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
- 
-  [[menu.main]]
-  name = "Words"
-  identifier = "words"
-  weight = 200
-  url = "/words/"
-
-  [[menu.main]]
-  name = "About"
-  identifier = "about"
-  weight = 300
-  url = "/about/"
+  [[menu.icons]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/samspills"
+  weight = 10
+  [[menu.icons]]
+  identifier = "mastodon"
+  name = "Mastodon"
+  url = "https://weirder.eartch/@spills"
+  weight = 20
 
 # ox-hugo required
 [markup.goldmark.renderer]
