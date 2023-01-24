@@ -36,7 +36,7 @@ enableRobotsTXT = true
   [[menu.icons]]
     identifier = "mastodon"
     name = "Mastodon"
-    url = "https://weirder.eartch/@spills"
+    url = "https://weirder.earth/@spills"
     weight = 20
 
 # ox-hugo required
