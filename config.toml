@@ -1,7 +1,7 @@
 baseURL = "https://www.blerf.ca/"
 languageCode = "en-us"
 title = "blerf"
-theme = "anatole"
+theme = "hugo-ficurinia"
 enableEmoji = true
 enableRobotsTXT = true
 
