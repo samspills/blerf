@@ -5,33 +5,39 @@ theme = "hugo-ficurinia"
 enableEmoji = true
 enableRobotsTXT = true
 
-# Syntax highlighting
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 2
+    style = "witchhazel"
 
 [params]
-author = "Sam Pillsworth"
-description = "blerfer of blerfs"
-posts = "words"
+  author = "Sam Pillsworth"
+  description = "blerfer of blerfs"
+  posts = "words"
+  showPostsLink = false
+  extraContentDirs = ["words"]
 
-logo = "/images/profile.png"
-favicon = "/images/favicon.png"
-faviconIco = "/images/favicon.ico"
-appletouch = "/images/apple-touch-icon.png"
-icon512 = "/images/android-chrome-512x512.png"
+  logo = "/images/profile.png"
+  favicon = "/images/favicon.png"
+  faviconIco = "/images/favicon.ico"
+  appletouch = "/images/apple-touch-icon.png"
+  icon512 = "/images/android-chrome-512x512.png"
 
 [menu]
   [[menu.icons]]
-  identifier = "github"
-  name = "GitHub"
-  url = "https://github.com/samspills"
-  weight = 10
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/samspills"
+    weight = 10
   [[menu.icons]]
-  identifier = "mastodon"
-  name = "Mastodon"
-  url = "https://weirder.eartch/@spills"
-  weight = 20
+    identifier = "mastodon"
+    name = "Mastodon"
+    url = "https://weirder.eartch/@spills"
+    weight = 20
 
 # ox-hugo required
 [markup.goldmark.renderer]

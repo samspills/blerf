@@ -21,17 +21,17 @@ To figure out:
 - [X] how to make a footnote?
 - [X] What do these checkboxes look like?
   - they look totally reasonable
-- [ ] Did I figure out syntax highlighting?
+- [X] Did I figure out syntax highlighting?
   + hot damn I did! Good job Past Sam!
-- [ ] different code styling?
-- [ ] line numbers??
+- [X] different code styling?
+- [X] line numbers??
 
 I am looking at this on a small screen and it looks not great. I think I would like to experiment
 with different themes that are better layouts on a small screen.
 
 #+begin_src scala
 // this is just some sample code to check highlighting
-def blerf(name: String): Unit = println(s"Hey, $name, did you know that Sam blerfed it?")
+def blerf(name: String): Unit = println(s"Hey, ${name}, did you know that Sam blerfed it?")
 #+end_src
 * Emacs
 ** DRAFT Blerfs with ox-hugo
