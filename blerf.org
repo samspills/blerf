@@ -1,0 +1,34 @@
+#+hugo_base_dir: ./
+#+hugo_section: words
+
+#+seq_todo: TODO DRAFT DONE
+
+#+property: header-args :eval never-export
+#+options: creator:t
+
+#+startup: indent
+
+#+AUTHOR: Sam Pillsworth
+
+* General
+** DRAFT I blerfed it :nonsense:
+:PROPERTIES:
+:EXPORT_FILE_NAME: blerfed-it
+:END:
+What's up nerds[fn:1], I'm back. Trying to figure this whole situation out.
+To figure out:
+- [X] is this post getting generated?
+- [X] how to make a footnote?
+- [ ] What do these checkboxes look like?
+- [ ] Did I figure out syntax highlighting?
+
+#+begin_src scala
+// this is just some sample code to check highlighting
+def blerf(name: String): Unit = println(s"Hey, $name, did you know that Sam blerfed it?")
+#+end_src
+* Emacs
+** DRAFT Blerfs with ox-hugo
+    This is a draft about writing using ox-hugo.
+
+* Footnotes
+[fn:1] It's me. My past self is nerds.
