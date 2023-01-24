@@ -6,12 +6,14 @@
 #+property: header-args :eval never-export
 #+options: creator:t
 
-#+startup: indent
+#+STARTUP: indent
+#+STARTUP: logdone
 
 #+AUTHOR: Sam Pillsworth
 
 * General
-** DRAFT I blerfed it :nonsense:
+** DONE I blerfed it :nonsense:
+CLOSED: [2023-01-23 Mon 23:23]
 :PROPERTIES:
 :EXPORT_FILE_NAME: blerfed-it
 :END:
@@ -33,6 +35,11 @@ with different themes that are better layouts on a small screen.
 // this is just some sample code to check highlighting
 def blerf(name: String): Unit = println(s"Hey, ${name}, did you know that Sam blerfed it?")
 #+end_src
+
+*** To remember in the future
+- If the netlify preview build fails but everything works locally, check the hugo version
+- not all chromastyles are available it seems?
+- the leading slashes for the logo paths are important
 * Emacs
 ** DRAFT Blerfs with ox-hugo
     This is a draft about writing using ox-hugo.

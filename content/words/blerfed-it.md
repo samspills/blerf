@@ -1,8 +1,9 @@
 +++
 title = "I blerfed it"
 author = ["Sam Pillsworth"]
+date = 2023-01-23T23:23:00-05:00
 tags = ["nonsense"]
-draft = true
+draft = false
 creator = "Emacs 28.2 (Org mode 9.5 + ox-hugo)"
 +++
 
@@ -25,5 +26,12 @@ with different themes that are better layouts on a small screen.
 // this is just some sample code to check highlighting
 def blerf(name: String): Unit = println(s"Hey, ${name}, did you know that Sam blerfed it?")
 ```
+
+
+## To remember in the future {#to-remember-in-the-future}
+
+-   If the netlify preview build fails but everything works locally, check the hugo version
+-   not all chromastyles are available it seems?
+-   the leading slashes for the logo paths are important
 
 [^fn:1]: It's me. My past self is nerds.
