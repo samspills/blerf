@@ -1264,3 +1264,13 @@ a.footnote-ref::before {
 a.footnote-ref::after {
     content: ']';
 }
+
+p > code,
+li > code,
+dd > code,
+td > code {
+    color: #C2FFDF;
+    background-color: var(--default_hl_bg);
+    padding: 3px 2px 1px 2px;
+    white-space: nowrap;
+}
