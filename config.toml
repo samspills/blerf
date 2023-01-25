@@ -1,9 +1,9 @@
 baseURL = "https://www.blerf.ca/"
 title = "Blerf"
 languageCode = "en-us"
+
 theme = "hugo-ficurinia"
-enableEmoji = true
-enableRobotsTXT = true
+summaryLength = 30
 
 [markup]
   [markup.highlight]
