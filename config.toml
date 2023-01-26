@@ -29,6 +29,14 @@ summaryLength = 30
   appletouch = "/images/apple-touch-icon.png"
   icon512 = "/images/android-chrome-512x512.png"
 
+  fontFamily = "Fantasque Sans Mono"  # changes the font, default "JetBrains Mono"
+  titleFontFamily = "Fantasque Sans Mono"  # font used for titles and headings
+  monospaceFontFamily = "Fantasque Sans Mono"  # changes the monospace font for code, default "JetBrains Mono"
+  # multipliers applied to font sizes, useful for custom fonts that may be too big or too small
+  titleFontSizeMultiplier = 1.1
+  mainFontSizeMultiplier = 1.1
+  monoFontSizeMultiplier = 1.1
+
 [menu]
   [[menu.icons]]
     identifier = "github"
