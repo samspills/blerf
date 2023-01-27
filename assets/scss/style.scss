@@ -231,7 +231,8 @@ code {
     font-family: $symbols_font, $mono_font, monospace;
     font-size: $base_font_size * .8 * $mono_font_mult;
     border: 1px solid var(--default_stroke);
-    border-radius: 3px
+    border-radius: 3px;
+    -webkit-text-size-adjust: 100%;
 }
 code, table {
     padding: 2px;
