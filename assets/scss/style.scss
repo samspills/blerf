@@ -1269,7 +1269,8 @@ a.footnote-ref::after {
 p > code,
 li > code,
 dd > code,
-td > code {
+td > code,
+h3 > code {
     color: #C2FFDF;
     background-color: var(--default_hl_bg);
     padding: 3px 2px 1px 2px;
