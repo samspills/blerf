@@ -117,6 +117,7 @@ body, html {
     padding: 0;
     background-color: var(--default_bg);
     color: var(--default_fg);
+    overflow-wrap: break-word;
 }
 
 body {
