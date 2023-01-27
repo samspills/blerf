@@ -117,7 +117,6 @@ body, html {
     padding: 0;
     background-color: var(--default_bg);
     color: var(--default_fg);
-    overflow-wrap: break-word;
 }
 
 body {
@@ -1264,6 +1263,15 @@ a.footnote-ref::before {
 
 a.footnote-ref::after {
     content: ']';
+}
+
+a.footnote-backref {
+    color: var(--default_accent);
+}
+
+.footnotes {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 p > code,
