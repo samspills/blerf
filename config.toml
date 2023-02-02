@@ -48,6 +48,11 @@ summaryLength = 30
     name = "Mastodon"
     url = "https://weirder.earth/@spills"
     weight = 20
+  [[menu.icons]]
+    identifier = "email"
+    name = "Email"
+    url = "mailto:comments@blerf.ca"
+    weight = 30
 
 # ox-hugo required
 [markup.goldmark.renderer]
