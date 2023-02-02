@@ -44,7 +44,8 @@ def blerf(name: String): Unit = println(s"Hey, ${name}, did you know that Sam bl
 ** DRAFT Blerfs with ox-hugo
     This is a draft about writing using ox-hugo.
 * Scala :scala:
-** DRAFT Refs and Streams 1: Scheduling Updates :cats_effect:fs2:rough_thoughts:
+** DONE Refs and Streams 1: Scheduling Updates :cats_effect:fs2:rough_thoughts:
+CLOSED: [2023-02-01 Wed 20:09]
 :PROPERTIES:
 :EXPORT_FILE_NAME: refs-and-streams-1
 :END:
@@ -126,5 +127,5 @@ The next step, which I'll write up separately, expands this reduced problem to i
 [fn:4] I didn't touch a computer for three whole weeks and it was glorious. I think my brain must
 have assumed I'd given up on tech and flushed my memory, because when I got back
 to work I could barely ~println("Hello, world")~
-[fn:3] This code sample is also available as [[https://gist.github.com/samspills/b1a3434e1bac21ac9c62004df2f25306][a gist]]. You can run it directly using ~scala-cli~.
+[fn:3] This code sample is also available as [[https://gist.github.com/samspills/b1a3434e1bac21ac9c62004df2f25306][a gist]]. You can run it directly using [[https://scala-cli.virtuslab.org/][scala-cli]].
 [fn:1] It's me. My past self is nerds.
