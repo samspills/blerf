@@ -1267,6 +1267,14 @@ h3 > code {
     white-space: nowrap;
 }
 
+.badges a:link {
+    border-bottom: none;
+    // in case I decide I want a hover to make clickable buttons obvious?
+    // &:hover {
+    //     border-bottom: 2px solid currentcolor;
+    // }
+}
+
 //
 // SRP END
 //
