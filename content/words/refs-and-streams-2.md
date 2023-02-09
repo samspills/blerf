@@ -1,8 +1,9 @@
 +++
 title = "Refs and Streams 2: Updating with an Endpoint"
 author = ["Sam Pillsworth"]
+date = 2023-02-09T11:05:00-05:00
 tags = ["scala", "cats-effect", "fs2", "http4s", "rough-thoughts"]
-draft = true
+draft = false
 creator = "Emacs 28.1 (Org mode 9.6 + ox-hugo)"
 +++
 

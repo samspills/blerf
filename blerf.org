@@ -123,7 +123,8 @@ work.
 
 The next step, which I'll write up separately, expands this reduced problem to include the API piece
 (using [[https://http4s.org/][Http4s]]).
-** DRAFT Refs and Streams 2: Updating with an Endpoint :cats_effect:fs2:http4s:rough_thoughts:
+** DONE Refs and Streams 2: Updating with an Endpoint :cats_effect:fs2:http4s:rough_thoughts:
+CLOSED: [2023-02-09 Thu 11:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: refs-and-streams-2
 :END:
