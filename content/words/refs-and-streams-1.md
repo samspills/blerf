@@ -4,7 +4,7 @@ author = ["Sam Pillsworth"]
 date = 2023-02-01T20:09:00-05:00
 tags = ["scala", "cats-effect", "fs2", "rough-thoughts"]
 draft = false
-creator = "Emacs 28.2 (Org mode 9.5 + ox-hugo)"
+creator = "Emacs 28.1 (Org mode 9.6 + ox-hugo)"
 +++
 
 The past month at `$work` I've been working on a fun little problem, and I decided to minimize
@@ -86,7 +86,9 @@ their respective programs ran. Both methods needs to be using the same `Ref` for
 work.
 
 The next step, which I'll write up separately, expands this reduced problem to include the API piece
-(using [Http4s](https://http4s.org/)).
+(using [http4s](https://http4s.org/)).
 
 [^fn:1]: This code sample is also available as [a gist](https://gist.github.com/samspills/b1a3434e1bac21ac9c62004df2f25306). You can run it directly using [scala-cli](https://scala-cli.virtuslab.org/).
-[^fn:2]: I didn't touch a computer for three whole weeks and it was glorious. I think my brain must have assumed I'd given up on tech and flushed my memory, because when I got back to work I could barely `println("Hello, world")`
+[^fn:2]: I didn't touch a computer for three whole weeks and it was glorious. I think my brain must
+    have assumed I'd given up on tech and flushed my memory, because when I got back
+    to work I could barely `println("Hello, world")`
