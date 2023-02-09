@@ -122,7 +122,7 @@ their respective programs ran. Both methods needs to be using the same ~Ref~ for
 work.
 
 The next step, which I'll write up separately, expands this reduced problem to include the API piece
-(using [[https://http4s.org/][Http4s]]).
+(using [[https://http4s.org/][http4s]]).
 ** DONE Refs and Streams 2: Updating with an Endpoint :cats_effect:fs2:http4s:rough_thoughts:
 CLOSED: [2023-02-09 Thu 11:05]
 :PROPERTIES:
@@ -130,7 +130,7 @@ CLOSED: [2023-02-09 Thu 11:05]
 :END:
 
 Oh, hello. Lets continue with our [[https://www.blerf.ca/words/refs-and-streams-1/][ref and stream experiment]] by writing and serving a minimal API
-with [[https://http4s.org/][Http4s]].
+with [[https://http4s.org/][http4s]].
 
 *** The Problem, A Recap
 From the first post:
@@ -145,7 +145,7 @@ the piece I’ve been working on.
 I'm continuing from last time by focusing now on the API:
 - how to use the ~Ref~ to construct a response?
 - how to update the ~Ref~ via a request?
-- how to link the Http4s ~Server~ with the scheduled updates?
+- how to link the http4s ~Server~ with the scheduled updates?
 
 *** The Pieces
 The method to update the ~Ref~ needed a few changes. The ~prog~ to do the actual updating is good;

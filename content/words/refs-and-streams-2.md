@@ -8,7 +8,7 @@ creator = "Emacs 28.1 (Org mode 9.6 + ox-hugo)"
 +++
 
 Oh, hello. Lets continue with our [ref and stream experiment](https://www.blerf.ca/words/refs-and-streams-1/) by writing and serving a minimal API
-with [Http4s](https://http4s.org/).
+with [http4s](https://http4s.org/).
 
 
 ## The Problem, A Recap {#the-problem-a-recap}
@@ -25,7 +25,7 @@ I'm continuing from last time by focusing now on the API:
 
 -   how to use the `Ref` to construct a response?
 -   how to update the `Ref` via a request?
--   how to link the Http4s `Server` with the scheduled updates?
+-   how to link the http4s `Server` with the scheduled updates?
 
 
 ## The Pieces {#the-pieces}
