@@ -304,6 +304,41 @@ Neat! At ~$work~, the update function was a lot more complicated because it was 
 GCS bucket (and a lot of error handling to go with it), and the lookup was more complicated because
 we have more than just an integer. BUT the bones of this solution are what I've shipped and it's
 going pretty well (touch wood, throw some salt over your left shoulder, etc. etc.).
+** TODO Fs2 Streaming Experiments: Mapping
+:PROPERTIES:
+:EXPORT_FILE_NAME: stream-exp-1
+:END:
+
+I had a small crisis of faith in my own understanding of Fs2 Streams, and particularly how
+data/chunks moves through the various combinators. I wrote many small experiments to convince myself
+of what was happening, and they could be useful more generally so I am sharing them here. To remove
+some of the suspense, I was confused about `prefetchN` so that's where we're headed.
+
+*** The Setup
+As with previous experiments, I'm using scala-cli so that it is maximally easy for someone to
+run and iterate themselves. Each experiment is a self-contained function and I just updated which I
+called.
+
+The setup for each stream is fairly similar and looks like:
+#+begin_src scala
+Stream
+  .emits(0 until 100)
+  .chunkN(10)
+  .unchunks
+#+end_src
+
+To break it down:
+- ~emits(0 until 100)~ gives me a ~Stream~ of integers, 0 to 99
+- ~chunkN(10)~ rechunks the stream so I have chunks of 10 integers each
+- I'm left with a ~Stream[Pure, Chunk[Int]]~ but I want to work with a ~Stream[Pure, Int]~. Calling
+  ~uncunks~ flattens the stream back into the type I want, but maintains the underlying chunk
+  structure I created.
+
+*** ~map~ and ~mapChunk~
+Lets start at the beginning, by comparing ~map~ and ~mapChunk~
+
+
+
 
 * Footnotes
 [fn:5] Check out the [[https://typelevel.org/cats-effect/api/3.x/cats/effect/kernel/Resource.html][API docs]] (which I'm quoting) for more details
