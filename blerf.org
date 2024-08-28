@@ -305,7 +305,8 @@ GCS bucket (and a lot of error handling to go with it), and the lookup was more 
 we have more than just an integer. BUT the bones of this solution are what I've shipped and it's
 going pretty well (touch wood, throw some salt over your left shoulder, etc. etc.).
 
-** DRAFT Batch 'em up, Move 'em on :fs2:
+** DONE Batch 'em up, Move 'em on :fs2:
+CLOSED: [2024-08-28 Wed 14:22]
 :PROPERTIES:
 :EXPORT_FILE_NAME: batch-it
 :END:

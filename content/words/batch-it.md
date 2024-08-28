@@ -1,8 +1,9 @@
 +++
 title = "Batch 'em up, Move 'em on"
 author = ["Sam Pillsworth"]
+date = 2024-08-28T14:22:00-04:00
 tags = ["scala", "fs2"]
-draft = true
+draft = false
 creator = "Emacs 29.2 (Org mode 9.8 + ox-hugo)"
 +++
 
