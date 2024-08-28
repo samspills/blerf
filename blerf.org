@@ -305,7 +305,52 @@ GCS bucket (and a lot of error handling to go with it), and the lookup was more 
 we have more than just an integer. BUT the bones of this solution are what I've shipped and it's
 going pretty well (touch wood, throw some salt over your left shoulder, etc. etc.).
 
+** DONE Batch 'em up, Move 'em on :fs2:
+CLOSED: [2024-08-28 Wed 14:22]
+:PROPERTIES:
+:EXPORT_FILE_NAME: batch-it
+:END:
+
+I really like working with fs2. I like saving little code examples for myself. I
+want to use the blog more and get out of the habit of reaching for gists. Also I need somewhere to put my intrusive-thought song parodies[fn:6].
+
+*** The Problem
+We have a stream of "things". We want to batch those things up, and do something
+to each batch. We need to count which batch we're on. Oh and also, if the stream
+of "things" is empty, we want to fallback to some other operation.
+*** The Code
+#+begin_src scala
+import cats.effect.IO
+import fs2.Stream
+
+def getAndProcessThings(batchSize: Int): IO[Unit] = {
+  val things: Stream[IO, Int] = Stream("a", "b", "c", "d", "e", "f", "g", "h", "i", "j").covary[IO]
+  val fallback: Stream[IO, Unit] = Stream.eval(IO.println("falling back"))
+
+  things
+    .chunkN(batchSize) // split stream into chunks of batchSize
+    .zipWithIndex // zip the chunks together with an index
+    .evalMap { case (chunk, batchNumber) =>
+      IO.println(s"Processing batch $batchNum: $chunk")
+    }
+    .ifEmpty(fallback)
+    .compile
+    .drain
+}
+#+end_src
+
+If that function is run with a batch size of 3, we'll get the following output
+#+begin_src shell
+processing batch number 0; Chunk(a, b, c)
+processing batch number 1; Chunk(d, e, f)
+processing batch number 2; Chunk(g, h, i)
+processing batch number 3; Chunk(j)
+#+end_src
+
+If ~things~ was instead set to a value of ~Stream.empty~, we'll instead see ~falling back~ printed.
 * Footnotes
+
+[fn:6] Rawhidddeeeee
 [fn:5] Check out the [[https://typelevel.org/cats-effect/api/3.x/cats/effect/kernel/Resource.html][API docs]] (which I'm quoting) for more details
 
 [fn:2] As before, this code is available as [[https://gist.github.com/samspills/5a59db10a7d1b7b349fafae14cf42c3a][a gist]]. You can run it directly using [[https://scala-cli.virtuslab.org/][scala-cli]].
