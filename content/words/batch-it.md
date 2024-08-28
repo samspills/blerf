@@ -25,14 +25,14 @@ import cats.effect.IO
 import fs2.Stream
 
 def getAndProcessThings(batchSize: Int): IO[Unit] = {
-  val things: Stream[IO, Int] = Stream("a", "b", "c", "d", "e", "f", "g", "h", "i", "j").covary[IO]
+  val things: Stream[IO, String] = Stream("a", "b", "c", "d", "e", "f", "g", "h", "i", "j").covary[IO]
   val fallback: Stream[IO, Unit] = Stream.eval(IO.println("falling back"))
 
   things
     .chunkN(batchSize) // split stream into chunks of batchSize
     .zipWithIndex // zip the chunks together with an index
     .evalMap { case (chunk, batchNumber) =>
-      IO.println(s"Processing batch $batchNum: $chunk")
+      IO.println(s"Processing batch $batchNumber: $chunk")
     }
     .ifEmpty(fallback)
     .compile
