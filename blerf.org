@@ -40,6 +40,18 @@ def blerf(name: String): Unit = println(s"Hey, ${name}, did you know that Sam bl
 - If the netlify preview build fails but everything works locally, check the hugo version
 - not all chromastyles are available it seems?
 - the leading slashes for the logo paths are important
+** DONE References :reference:
+CLOSED: [2024-09-04 Wed 19:53]
+:PROPERTIES:
+:EXPORT_FILE_NAME: references
+:END:
+This is just a collection of links for myself. Usually articles I've referenced
+or written about elsewhere and I want to keep some kind of track of them. For
+now it's just a big list by year of access, but maybe I will better categorize
+them some time in the future.
+*** 2024
+- https://www.geoffreylitt.com/2024/08/25/your-pie-doesnt-need-be-original
+- https://www.ursulakleguin.com/a-rant-about-technology
 * Emacs
 ** DRAFT Blerfs with ox-hugo
     This is a draft about writing using ox-hugo.
