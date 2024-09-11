@@ -4,7 +4,7 @@ author = ["Sam Pillsworth"]
 date = 2024-09-04T19:53:00-04:00
 tags = ["reference"]
 draft = false
-creator = "Emacs 29.2 (Org mode 9.6.1 + ox-hugo)"
+creator = "Emacs 29.2 (Org mode 9.8 + ox-hugo)"
 +++
 
 This is just a collection of links for myself. Usually articles I've referenced
@@ -17,3 +17,4 @@ them some time in the future.
 
 -   <https://www.geoffreylitt.com/2024/08/25/your-pie-doesnt-need-be-original>
 -   <https://www.ursulakleguin.com/a-rant-about-technology>
+-   <https://citiesandmemory.com/obsolete-sounds/>

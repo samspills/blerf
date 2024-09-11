@@ -52,6 +52,7 @@ them some time in the future.
 *** 2024
 - https://www.geoffreylitt.com/2024/08/25/your-pie-doesnt-need-be-original
 - https://www.ursulakleguin.com/a-rant-about-technology
+- https://citiesandmemory.com/obsolete-sounds/
 * Emacs
 ** DRAFT Blerfs with ox-hugo
     This is a draft about writing using ox-hugo.
