@@ -71,6 +71,9 @@ config:
   themeVariables:
     textColor: "#777"
     primaryColor: "#d33682"
+    loopTextColor: "#6c71c4"
+    labelBoxBkgColor: "#6c71c4"
+    labelBoxBorderColor: "#6c71c4"
   fontSize: 22
 ---
 sequenceDiagram
@@ -78,13 +81,13 @@ sequenceDiagram
     participant B
     participant C
     A-->>+B: request to B
-    B-->>-B: response from B
-    A-->>+C: <br/><br/> request to C
+    B-->>-A: response from B
+    A-->>+C: <br/><br/>request to C
     C-->>-A: response from C
-    par [many requests in parallel]
+    par many requests in parallel
     note right of B: remember!
-    B-->>+C: <br/><br/> request to C
-    B-->>-C: response from C
+    B-->>+C: request to C
+    C-->>-B: response from C
     end
 #+end_src
 
@@ -92,8 +95,14 @@ sequenceDiagram
 - I couldn't get ~background~ to work on GitHub to set a specific colour for the display window
   - This is why I had to set the font colour to a midtone grey, to try to support both a light and dark background
 - the ~<br/><br/>~ adds some visual space, so that a request and it's response are clustered together compared to distinct requests
-- the ~par~ action text is not readable on the dark background, what font colour do I need to change for that one?
-- changing ~fontSize~ at the top level worked, but I couldn't get any of the sequence specific font configs to work
+- the ~par~ box & border are controlled by the label variables, the action text is controlled by the loop text colour
+- ~fontSize~ is changed at the top level, NOT inside the theme variables
+*** Screenshots
+This is what the above sequence diagram looks like in dark mode and light mode on GitHub:
+
+[[file:static/images/mermaid-config/dark-mode.png]]
+
+[[file:static/images/mermaid-config/light-mode.png]]
 * Emacs
 ** DRAFT Blerfs with ox-hugo
     This is a draft about writing using ox-hugo.
