@@ -54,14 +54,38 @@ them some time in the future.
 - https://www.ursulakleguin.com/a-rant-about-technology
 - https://citiesandmemory.com/obsolete-sounds/
 
-** TODO Mermaid diagrams on GitHub
+** DONE Mermaid diagrams on GitHub :reference:mermaid:github:
+CLOSED: [2024-09-18 Wed 09:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: mermaid-config
+:END:
 While working on a sequence diagram for a particular flow I lost a lot of time
 trying to get a mermaid sequence diagram to not look chaotic, to not be so tiny
 on my small laptop, and to have cute colours. I'm saving this for future
 reference.
 
 #+begin_src mermaid
-
+---
+config:
+  theme: base
+  themeVariables:
+    textColor: "#777"
+    primaryColor: "#d33682"
+  fontSize: 22
+---
+sequenceDiagram
+    participant A
+    participant B
+    participant C
+    A-->>+B: request to B
+    B-->>-B: response from B
+    A-->>+C: <br/><br/> request to C
+    C-->>-A: response from C
+    par [many requests in parallel]
+    note right of B: remember!
+    B-->>+C: <br/><br/> request to C
+    B-->>-C: response from C
+    end
 #+end_src
 
 *** Notes about this config, in no particular order
