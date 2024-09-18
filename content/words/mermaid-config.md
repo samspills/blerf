@@ -44,7 +44,7 @@ sequenceDiagram
 
 -   I couldn't get `background` to work on GitHub to set a specific colour for the display window
     -   This is why I had to set the font colour to a midtone grey, to try to support both a light and dark background
--   the `<br/><br/>` adds some visual space, so that a request and it's response are clustered together compared to distinct requests
+-   the `<br/><br/>` adds some visual space, so that a request and its response are clustered together compared to distinct requests
 -   the `par` box &amp; border are controlled by the label variables, the action text is controlled by the loop text colour
 -   `fontSize` is changed at the top level, NOT inside the theme variables
 
