@@ -46,7 +46,7 @@ summaryLength = 30
   [[menu.icons]]
     identifier = "mastodon"
     name = "Mastodon"
-    url = "https://weirder.earth/@spills"
+    url = "https://hachyderm.io/@spills"
     weight = 20
   [[menu.icons]]
     identifier = "email"
