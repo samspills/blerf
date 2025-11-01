@@ -517,7 +517,7 @@ But then I went down quite a rabbit hole as I followed my "custom input type" pl
 
 To start I created the ~FibonacciNumber~ struct, and started implementing ~FromStr~. I struggled to implement the ~Err~ for the ~Result~ type at first, because I was trying to combine an ~IntErrorKind::PosOverflow~ (to be returned for numbers greater than 100) and a ~ParseIntError~. I couldn't figure out how to limit my error enum to *just* the ~PosOverflow~ variant, the compiler kept telling me to use ~IntErrorKind~. Eventually I gave up and just created my own variants. But once I had the enum it needed to be a proper ~std::error::Error~ which required implementing ~Debug~ (easy, because I could derive it) and ~Display~ (more toil but an easy enough pattern to follow).
 
-I got momentarily distracted by the power of ~Display~ and implemented one for ~FibonacciNumber~ that gave each number the proper ordinal indicator. This was very satisfying.
+I got momentarily distracted by the power of ~Display~ and implemented one for ~FibonacciNumber~ that gave each number the proper ordinal indicator. This was very satisfying. (Update: I have just realized I have an 11 bug. Damn.)
 
 Eventually I remembered the goal was ~FromStr~ and finished implementing that, returning either a ~Ok(FibonacciNumber)~ or an ~Err(FibonacciNumberError)~ in each branch.
 
