@@ -46,11 +46,15 @@ struct FibonacciNumber {
 }
 impl Display for FibonacciNumber {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        match self.n % 10 {
-            1 => write!(f, "{}st", self.n),
-            2 => write!(f, "{}nd", self.n),
-            3 => write!(f, "{}rd", self.n),
-            _ => write!(f, "{}th", self.n),
+        if [11, 12, 13].contains(&self.n) {
+            write!(f, "{}th", self.n)
+        } else {
+            match self.n % 10 {
+                1 => write!(f, "{}st", self.n),
+                2 => write!(f, "{}nd", self.n),
+                3 => write!(f, "{}rd", self.n),
+                _ => write!(f, "{}th", self.n),
+            }
         }
     }
 }
